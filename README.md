@@ -1,1 +1,2 @@
-# Portal EAD-PHP somente o html sem banco.
+# Portal EAD-PHP.
+somente o html sem banco.
