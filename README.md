@@ -1,2 +1,2 @@
 # Portal EAD-PHP.
-somente o html sem banco.
+somente o html funçoes php em desenvolvimento sem banco.
