@@ -1,4 +1,7 @@
-<!doctype html>
+<?php 
+include("src/database/CursoDTO.php");
+
+?>
 <html>
 <head>
 	<title>Sistemas Roberto</title>
@@ -32,7 +35,7 @@
 					</li>
 					<li class="sub user"><a href="" class="thumb"><img src="img/foto01.png"></a>
 						<ul>
-							<li><b>Roberto Araujo</b><small><a href="">Sair</a></small></li>
+							<li><b>Roberto Araujo </b><small><a href="">Sair</a></small></li>
 						</ul>
 					</li>
 				</ul>
@@ -46,7 +49,7 @@
 				<figure>
 					<div class="thumb"><img src="img/foto01.png"></div>
 					<figcaption>
-						<strong>Roberto Araujo</strong>
+						<strong><?php echo "Bruno"; ?></strong>
 						<small>Em andamento</small>
 					</figcaption>
 				</figure>
@@ -55,6 +58,13 @@
 					<li><a href="meus_cursos.html"><i class="ico curso"></i>MEUS CURSOS</a></li>
 					<li><a href="perfil.html"><i class="ico perfil"></i>MEU PERFIL</a></li>
 					<li><a href="comentario.html"><i class="ico duvida"></i>COMENTÁRIOS</a></li>
+					<?php 
+						$cursos = CursoDTO::select();
+
+						foreach($cursos as $row){
+							echo $row[1];
+						}
+					?>
 					<li><a href=""><i class="ico sair"></i>SAIR</a></li>
 				</ul>
 			</div>
