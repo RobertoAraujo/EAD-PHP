@@ -1,3 +1,7 @@
+<?php
+	session_start();	
+	
+?>
 <!doctype html>
 <html>
 	<head>
@@ -34,7 +38,7 @@
 				
 				<li class="sub user"><a href="" class="thumb"><img src="img/foto01.png"></a>
 					<ul>
-						<li><b>Manoel jailton</b><small><a href="">Sair</a></small></li>
+						<li><b><?php echo $_SESSION['nome']?></b><small><a href="">Sair</a></small></li>
 					</ul>
 				</li>
 			</ul>
@@ -48,7 +52,7 @@
 					<figure>
 							<div class="thumb"><img src="img/foto01.png"></div>
 							<figcaption>
-									<strong>Manoel jailton</strong>
+									<strong><?php echo $_SESSION['nome']?></strong>
 									<small>Em andamento</small>
 							</figcaption>
 					</figure>

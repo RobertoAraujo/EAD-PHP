@@ -1,10 +1,19 @@
 <?php
-    session_start();
+	// A sessão precisa ser iniciada em cada página diferente
+	if (!isset($_SESSION)) session_start();
+	// Verifica se não há a variável da sessão que identifica o usuário
+	if (!isset($_SESSION['id_usuario'])) {
+		// Destrói a sessão por segurança
+		session_destroy();
+		// Redireciona o visitante de volta pro login
+		header("Location: index.php"); exit;
+	}
+  
 ?>
 <!doctype html>
 <html>
 	<head>
-		<title>Sistemas mjailton</title>
+		<title>Sistemas EAD</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -17,6 +26,7 @@
 		
 	</head>
 <body>
+<?php //echo "Olá ".$_SESSION['usuario']." "?>
 	<div class="base-topo">
 		<div class="conteudo">
 			<a href="" class="menu-m">menu mobile esquerdo</a><!-- aqui fico icone reponsavel pelo meno da esquerda-->
@@ -35,7 +45,7 @@
 				</li>
 				<li class="sub user"><a href="" class="thumb"><img src="img/foto01.png"></a>
 					<ul>
-						<li><b>Manoel jailton</b><small><a href="">Sair</a></small></li>
+						<li><b> <?php echo $_SESSION['nome']?> </b> <small><a href="sair.php">Sair</a></small></li>
 					</ul>
 				</li>
 			</ul>
@@ -49,16 +59,16 @@
 			<figure>
 					<div class="thumb"><img src="img/foto01.png"></div>
 					<figcaption>
-						<strong>Manoel jailton</strong>
+						<strong> <?php echo $_SESSION['nome']?> </strong>
 						<small>Em andamento</small>
 					</figcaption>
 			</figure>
 			<ul>
-					<li><a href="index.html"><i class="ico home"></i>HOME</a></li>
-					<li><a href="meus_cursos.html"><i class="ico curso"></i>MEUS CURSOS</a></li>
-					<li><a href="perfil.html"><i class="ico perfil"></i>MEU PERFIL</a></li>
-					<li><a href="comentario.html"><i class="ico duvida"></i>COMENTÁRIOS</a></li>
-					<li><a href=""><i class="ico sair"></i>SAIR</a></li>
+					<li><a href="index.php"><i class="ico home"></i>HOME</a></li>
+					<li><a href="meus_cursos.php"><i class="ico curso"></i>MEUS CURSOS</a></li>
+					<li><a href="perfil.php"><i class="ico perfil"></i>MEU PERFIL</a></li>
+					<li><a href="comentario.php"><i class="ico duvida"></i>COMENTÁRIOS</a></li>
+					<li><a href="sair.php"><i class="ico sair"></i>SAIR</a></li>
 			</ul>
 			</div>
 		</div>     
@@ -74,9 +84,9 @@
 				<figure class="caixa">
 					<div class="thumb"><img src="img/foto01.png"></div>
 					<figcaption>
-							<strong>Manoel jailton</strong>
+							<strong><?php echo $_SESSION['nome']?></strong>
 							<small><b>Seu tutor nos cursos</b></small>
-							<small>mjaiton@gmail.com</small>
+							<small><?php echo $_SESSION['usuario']?></small>
 					</figcaption>
 				</figure>
 			</div>
