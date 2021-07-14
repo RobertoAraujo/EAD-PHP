@@ -4,19 +4,19 @@
 ?>
 <!doctype html>
 <html>
-	<head>
-		<title>Sistemas mjailton</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/auxiliar.css">
-		<link rel="stylesheet" type="text/css" href="css/grade.css">
-		<link rel="stylesheet" type="text/css" href="css/m-style.css">
+<head>
+        <title>Sistemas EAD</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/auxiliar.css">
+	<link rel="stylesheet" type="text/css" href="css/grade.css">
+	<link rel="stylesheet" type="text/css" href="css/m-style.css">
 		 
-		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-		<script type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
 		
-	</head>
+</head>
 <body>
 	<div class="base-topo">
 		<div class="conteudo">
