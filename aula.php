@@ -35,7 +35,6 @@
 					</ul>
 				</li>
 				
-				
 				<li class="sub user"><a href="" class="thumb"><img src="img/foto01.png"></a>
 					<ul>
 						<li><b><?php echo $_SESSION['nome']?></b><small><a href="">Sair</a></small></li>
