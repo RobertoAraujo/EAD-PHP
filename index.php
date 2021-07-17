@@ -113,7 +113,6 @@
 			</div>
         </div>
 
-
         <div class="rows listagem">
                 <div class="col-6 matriculados d-flex mb-3">
                     <div class="caixa">

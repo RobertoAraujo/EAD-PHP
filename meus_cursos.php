@@ -1,6 +1,5 @@
 <?php
-	session_start();	
-	
+    session_start();		
 ?>
 <!doctype html>
 <html>
@@ -34,7 +33,6 @@
 						<li><a href="">Delphi</a></li>
 					</ul>
 				</li>
-				
 				
 				<li class="sub user"><a href="" class="thumb"><img src="img/foto01.png"></a>
 					<ul>
