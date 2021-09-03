@@ -88,7 +88,7 @@
 						<div class="col-6">
 							<div class="py-1">
 								<label>Nome</label>
-								<input type="text" placeholder="Nome">
+								<input type="text" placeholder="Nome" value="<?php echo $_SESSION['nome']?>">
 							</div>
 							<div class="py-1">
 								<label>Email</label>

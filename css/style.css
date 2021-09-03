@@ -139,7 +139,7 @@ ol {
 }
 
 .caixa-login .mostrasenha .sair:hover {
-    color: red
+    color: #D90000;
 }
 
 .site {
@@ -155,12 +155,15 @@ ol {
     clear: both;
 }
 
+
+/* aqui onde altera o menu linha */
+
 .base-topo {
     width: 100%;
     height: 57px;
     float: left;
     padding: 10px 0;
-    background: #009FFF;
+    background: #D90000;
     position: relative;
 }
 

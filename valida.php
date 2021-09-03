@@ -1,16 +1,15 @@
 <?php
-
 session_start();
 include_once("conexao.php");
 
-$btnLogin = filter_input(INPUT_POST, 'btnLogin', FILTER_SANITIZE_STRING);
+$btnLogin = filter_input(INPUT_POST,'btnLogin',FILTER_SANITIZE_STRING);
 if($btnLogin){
-	$usuario = filter_input(INPUT_POST,'usuario', FILTER_SANITIZE_STRING);
-	$senha = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_STRING);
+	$usuario = filter_input(INPUT_POST,'usuario',FILTER_SANITIZE_STRING);
+	$senha = filter_input(INPUT_POST,'senha',FILTER_SANITIZE_STRING);
 	//echo "$usuario - $senha";
 	if((!empty($usuario)) AND (!empty($senha))){
 		//Gerar a senha criptografa
-			//echo password_hash($senha, PASSWORD_DEFAULT);
+		//echo password_hash($senha, PASSWORD_DEFAULT);
 		//Pesquisar o usuário no BD
 		$result_usuario = "SELECT id_usuario, usuario, nome, senha FROM usuario WHERE usuario='$usuario' LIMIT 1";
 		$resultado_usuario = mysqli_query($conn, $result_usuario);
@@ -18,13 +17,13 @@ if($btnLogin){
 			$row_usuario = mysqli_fetch_assoc($resultado_usuario);
 			if(password_verify($senha, $row_usuario['senha'])){
 				$_SESSION['id_usuario'] =$row_usuario['id_usuario'];
-				$_SESSION['usuario'] =$row_usuario['usuario'];
 				$_SESSION['nome'] =$row_usuario['nome'];
-				
+				$_SESSION['usuario'] =$row_usuario['usuario'];
+
 				header("Location: index.php");
 
 			}else{
-				$_SESSION['msg'] = "Login e senha incorreto! 1 .1 ";
+				$_SESSION['msg'] = "Atenção Login e senha 123 incorreto! ";
 				header("Location: login.php");
 			}
 		}
