@@ -43,7 +43,6 @@
 		</div>
 		</div>
 	</div>
-	
 	<div class="site">
 		<div id="menu">
 			<div class="menu-lateral">
