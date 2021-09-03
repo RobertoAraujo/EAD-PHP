@@ -28,7 +28,7 @@
 						}
 					?>
 					<label>
-						<input type="text" name="usuario" value="" placeholder="Login">
+						<input type="text" name="usuario" value="" placeholder="usuario">
 					</label>
 					<label>
 						<input type="password" name="senha" value="" placeholder="Senha">
