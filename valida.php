@@ -34,4 +34,6 @@ if($btnLogin){
 }else{
 	$_SESSION['msg'] = "Página não encontrada";
 	header("Location: login.php");
+
+	
 }
