@@ -1,5 +1,5 @@
 # Portal EAD-PHP.
-somente o html. 
+Somente o html. 
 funçoes php em desenvolvimento sem banco.
 funçoes em javascript também em desenvolvimento.
 banco atualizado.
