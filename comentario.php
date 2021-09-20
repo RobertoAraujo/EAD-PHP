@@ -2,7 +2,7 @@
 	session_start();	
 ?>
 <!doctype html>
-<html>
+<html> <!-- -->
 	<head>
 	<title>Sistemas EAD</title>
 		<meta charset="utf-8">
