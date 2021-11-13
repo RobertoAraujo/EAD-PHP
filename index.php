@@ -9,7 +9,6 @@
 		// Redireciona o visitante de volta pro login
 		header("Location: index.php"); exit;
 	}
-  
 ?>
 <!doctype html>
 <html>
